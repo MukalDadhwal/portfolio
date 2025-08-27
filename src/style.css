@@ -1,0 +1,133 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* CSS Variables */
+:root {
+  --bg-color: #0d1117;
+  --text-color: #c9d1d9;
+  --accent-green: #00ff88;
+  --accent-purple: #9b5de5;
+  --accent-blue: #00b4d8;
+  --header-font: 'JetBrains Mono', monospace;
+  --body-font: 'JetBrains Mono', monospace;
+}
+
+/* Reset and Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+  background-image: linear-gradient(rgba(0, 255, 136, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 136, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  overflow-x: hidden;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  padding: 6rem 2rem 2rem;
+  /* Add padding to avoid content being hidden by sticky navbar */
+}
+
+section {
+  padding: 4rem 0;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+  color: var(--accent-green);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+a {
+  color: var(--accent-purple);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-blue);
+}
+
+/* Navbar Styles */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+nav .logo {
+  font-family: var(--header-font);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a.router-link-active.router-link-exact-active::after {
+  width: 100%;
+}
+
+nav ul li a.router-link-active.router-link-exact-active {
+  color: var(--primary-color);
+}

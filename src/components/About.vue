@@ -25,7 +25,7 @@ export default {
       textLines: [
         "A passionate and driven Computer Science student with hands-on experience in backend engineering and mobile app development.",
         "From building scalable AdTech systems to developing Smart Home IoT applications, I thrive on solving complex problems.",
-        "My project work, including an award-winning AI/ML platform for protein analysis, showcases my commitment to leveraging technology for impactful solutions.",
+        "My project work, including an hackathon-winning AI/ML platform for protein analysis, showcases my commitment to leveraging technology for impactful solutions.",
         "I am a quick learner, a team leader, and always eager to take on new challenges."
       ],
       animatedText: [],

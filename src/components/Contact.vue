@@ -134,4 +134,65 @@ export default {
   background-color: #2c9f5a;
   transform: translateY(-2px);
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-wrapper {
+    gap: 1.5rem;
+  }
+
+  .contact-content {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .info-line {
+    margin-bottom: 0.8rem;
+    word-break: break-all;
+  }
+
+  .resume-button {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .contact-content {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .comment {
+    font-size: 0.85rem;
+  }
+
+  .info-line {
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .resume-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    width: 100%;
+  }
+}
 </style>

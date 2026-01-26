@@ -116,4 +116,60 @@ export default {
     box-shadow: 0 0 20px var(--accent-blue), 0 0 30px var(--accent-purple), 0 0 40px var(--accent-purple);
   }
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    order: 2;
+  }
+
+  .about-image {
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-image .image-placeholder {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+  }
+
+  .about-image .image-placeholder {
+    width: 120px;
+    height: 120px;
+  }
+
+  .line-by-line {
+    margin-bottom: 0.8rem;
+  }
+}
 </style>

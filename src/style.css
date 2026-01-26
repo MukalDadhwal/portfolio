@@ -131,3 +131,47 @@ nav ul li a.router-link-active.router-link-exact-active::after {
 nav ul li a.router-link-active.router-link-exact-active {
   color: var(--primary-color);
 }
+/* Responsive Design - Mobile */
+@media (max-width: 768px) {
+  body {
+    background-size: 15px 15px;
+  }
+
+  main {
+    padding: 5rem 1rem 1rem;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  nav {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 4.5rem 0.5rem 0.5rem;
+  }
+
+  section {
+    padding: 1.5rem 0;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}

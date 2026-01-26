@@ -182,4 +182,66 @@ export default {
   opacity: 0;
   transform: translateY(20px);
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .intro-container {
+    padding: 1rem;
+    transform: translateY(-5vh);
+  }
+
+  .typing-effect {
+    font-size: clamp(1.4rem, 6vw, 2rem);
+  }
+
+  .cursor {
+    width: 10px;
+    height: clamp(1.4rem, 6vw, 2rem);
+    margin-left: 5px;
+  }
+
+  .roles {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+    height: 1.5rem;
+  }
+
+  .role {
+    margin: 0 0.3rem;
+  }
+
+  .scroll-indicator {
+    bottom: 15vh;
+  }
+
+  .chevron {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-container {
+    padding: 0.5rem;
+  }
+
+  .typing-effect {
+    font-size: clamp(1.2rem, 7vw, 1.6rem);
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .roles {
+    font-size: clamp(0.8rem, 4.5vw, 1rem);
+    height: auto;
+    line-height: 1.8;
+  }
+
+  .role {
+    margin: 0 0.2rem;
+  }
+
+  .scroll-indicator {
+    bottom: 12vh;
+  }
+}
 </style>

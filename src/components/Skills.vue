@@ -93,4 +93,48 @@ export default {
     transform: translateY(0);
   }
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .skills-container {
+    gap: 0.8rem;
+  }
+
+  .skill-tag {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .skill-tag i {
+    margin-right: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .skills-container {
+    gap: 0.6rem;
+  }
+
+  .skill-tag {
+    font-size: 0.9rem;
+    padding: 0.35rem 0.7rem;
+  }
+}
 </style>

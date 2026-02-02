@@ -9,25 +9,52 @@
         <p class="comment">&nbsp; * My inbox is always open!</p>
         <p class="comment">&nbsp; */</p>
         <div class="contact-info">
-          <div class="info-line"><span class="variable">const</span> <span class="name">email</span> = <a
-              href="mailto:mukaldadhwal@gmail.com" class="string">'mukaldadhwal@gmail.com'</a>;</div>
-          <div class="info-line"><span class="variable">const</span> <span class="name">linkedin</span> = <a
-              href="https://www.linkedin.com/in/mukal-dadhwal/" target="_blank"
-              class="string">'https://www.linkedin.com/in/mukal-dadhwal/'</a>;</div>
-          <div class="info-line"><span class="variable">const</span> <span class="name">x</span> = <a
-              href="https://x.com/mukaldadhwal" target="_blank" class="string">'https://x.com/mukaldadhwal'</a>;</div>
-          <div class="info-line"><span class="variable">const</span> <span class="name">leetcode</span> = <a
-              href="https://leetcode.com/u/Mkk8/" target="_blank" class="string">'https://leetcode.com/u/Mkk8/'</a>;
+         <div class="info-line">
+            <span class="variable">const </span>
+            <span class="name">email</span>
+            =
+            <a href="mailto:mukaldadhwal@gmail.com" class="string">
+              'mukaldadhwal@gmail.com'
+            </a>;
           </div>
-          <div class="info-line"><span class="variable">const</span> <span class="name">github</span> = <a
-              href="https://github.com/MukalDadhwal/" target="_blank"
-              class="string">'https://github.com/MukalDadhwal/'</a>;</div>
+         <div class="info-line">
+            <span class="variable">const </span>
+            <span class="name">linkedin</span>
+            =
+            <a href="https://www.linkedin.com/in/mukal-dadhwal/" target="_blank" class="string">
+              'LinkedIn'
+            </a>;
+          </div>
+          <div class="info-line">
+            <span class="variable">const </span>
+            <span class="name">x</span>
+            =
+            <a href="https://x.com/mukaldadhwal" target="_blank" class="string">
+              'X (Twitter)'
+            </a>;
+          </div>
+          <div class="info-line">
+            <span class="variable">const </span>
+            <span class="name">leetcode</span>
+            =
+            <a href="https://leetcode.com/u/Mkk8/" target="_blank" class="string">
+              'LeetCode'
+            </a>;
+          </div>
+          <div class="info-line">
+            <span class="variable">const </span>
+            <span class="name">github</span>
+            =
+            <a href="https://github.com/MukalDadhwal/" target="_blank" class="string">
+              'GitHub'
+            </a>;
+          </div>
         </div>
-      </div>
-      <div class="resume-section">
-        <a href="/Mukal_Resume.pdf" download="Mukal_Dadhwal_Resume.pdf" class="resume-button">
-          Download Resume
-        </a>
+        <div class="resume-section">
+          <a href="/Mukal_Resume.pdf" download="Mukal_Dadhwal_Resume.pdf" class="resume-button">
+            Download Resume
+          </a>
+       </div>
       </div>
     </div>
   </section>
@@ -53,31 +80,21 @@ export default {
 }
 
 .contact-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  max-width: 800px;
-  /* Increased max-width */
+  display: flex;
+    justify-content: center;
+    max-width: 960px;
   margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-  .contact-wrapper {
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 4rem;
-    /* Increased gap */
-  }
 }
 
 .contact-content {
   background-color: #161b22;
   border: 1px solid #30363d;
   border-radius: 8px;
-  padding: 2rem;
+  padding: 2rem 2.5rem;
   text-align: left;
   font-family: var(--header-font);
   width: 100%;
+  max-width: 860px;
 }
 
 .comment {
@@ -92,6 +109,7 @@ export default {
 
 .info-line {
   margin-bottom: 0.5rem;
+  white-space: nowrap;
 }
 
 .variable {
@@ -115,6 +133,7 @@ export default {
 }
 
 .resume-section {
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -122,12 +141,13 @@ export default {
   background-color: var(--accent-green);
   color: var(--bg-color);
   font-family: var(--header-font);
-  font-size: 1.2rem;
-  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+    padding: 0.8rem 1.75rem;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
   display: inline-block;
+  box-shadow: 0 0 0 1px rgba(0, 255, 136, 0.25);
 }
 
 .resume-button:hover {
@@ -156,7 +176,8 @@ export default {
   }
 
   .info-line {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
+      white-space: normal;
     word-break: break-all;
   }
 
